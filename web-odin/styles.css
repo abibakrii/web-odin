@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
     flex-direction: column;
     align-items: space-around;
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'monospace';
 }
 
 .top-section {
@@ -34,7 +34,7 @@ body {
 }
 
 .header-link {
-    width: 50%;
+    width: 40%;
     justify-self: flex-end;
     font-size: 18p;
     color: #c4c6cb;
@@ -60,34 +60,67 @@ body {
     background-color: #fff;
 }
 
-.title {
-    font-size: 60px;
-    font-weight: 900;
-}
-
 .top-image {
     display: flex;
     margin-left: 10px;
-    margin-bottom: 50px;
 }
 
 .image-placeholder {
-    width: 300px;
+    object-fit: contain;
+    max-width: 100%;
+    /* width: 300px;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: grey;
-    border-radius: 4px;
-    /* object-fit: contain;
-    max-width: 100%; */
+    border-radius: 4px; */
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 900;
+
 }
 
 .top-subsection {
     display: flex;
     margin-top: 60px;
-
+    flex: 1;
+    height: 90vh;
+    justify-content: space-between;
 }
+
+.sub-text {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.top-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: center;
+    margin-bottom: 80px;
+}
+
+.top-text .signup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 30%;
+    transition: all .5s ease;
+    /* font-family: "truenoexbd"; */
+    font-size: 18px;
+    background-color: #3882F6;
+    border-radius: 10px;
+    /* margin: 10px; */
+    color: white;
+    font-weight: bold;
+    flex-grow: 0;
+}
+
 
 /* .header-container{
     display: flex;
