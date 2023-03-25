@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
     flex-direction: column;
     align-items: space-around;
-    font-family: 'Roboto', 'monospace';
+    font-family: 'monospace';
 }
 
 .top-section {
@@ -68,13 +68,6 @@ body {
 .image-placeholder {
     object-fit: contain;
     max-width: 100%;
-    /* width: 300px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: grey;
-    border-radius: 4px; */
 }
 
 .title {
@@ -152,7 +145,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bold1;
+    text-align: center;
 }
 
 .quote-section {
@@ -172,12 +165,79 @@ body {
 .quote-text {
     font-style: italic;
     font-size: 30px;
-    /* height: 200px; */
+    font-family: 'Bona Nova', serif;
+    font-weight: 500;
 }
 
 .quote-text::before{
     content: open-quote;
     font-size: 50px;
     color: #000000;
+}
+
+.quote-owner {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    font-family: 'Bona Nova', serif;
+    font-weight: bold;
+}
+
+.signup-section {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.signup-content {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3882f6;
+    border-radius: 9px;
+    width: 70%;
+    height: 40%;
+}
+
+.call-section {
+    margin-top: 25px;
+    color: #fff;
+}
+
+.signup-heading {
+    font-size: 22px;
+    font-weight: 550;
+}
+
+.signup-text {
+    font-size: 16px;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+}
+
+.subs-button {
+    width: 180px;
+    padding: 6px;
+    color: #fff;
+    background-color: #3882F6;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.footer {
+    background-color: #2d3c50;
+    color: white;
+    justify-self: flex-end;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    height: 50px;
+    padding-top: 40px;
 }
 
